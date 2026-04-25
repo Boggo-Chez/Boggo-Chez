@@ -1,4 +1,4 @@
-# Welcome!
+# Welcome! 😸
 
 Currently I'm working on getting my Kubernetes cluster up and running! I've played around with docker but now I'm ready to enter into the wonderful world of kubectl! I try to work with a lot of different software/hardware to expand my knowledge!
 
