@@ -4,11 +4,11 @@ Currently I'm working on getting my Kubernetes cluster up and running! I've play
 
 ## Other Projects
 
-### Proxmox VE
-I've worked with proxmox for well over a year now and use it constnatly. I have it running my Docker vm, as well as my Kubernetes VM's as well. I've also used it to run my own HA Windows AD servers as well.
+### [Proxmox VE](https://www.proxmox.com/en/)
+I've worked with proxmox for well over a year now and use it constnatly. I have it running my Docker vm, as well as my Kubernetes VM's as well. I've also used it to run my own HA Windows AD servers as well. I also setup PBS (Proxmox backup server) to facilitate hourly, daily, weekly, monthly, and yearly backups of all my vms.
 > Done ✅
 
-### Docker
+### [Docker](https://www.docker.com)
 I use docker on a daily basis to host my Arr stack as well as a Jellyfin server that I use to store the movies/shows/music that I've downloaded. It's been one of my favorite things to learn and it's super fun once you get used to it!
 > Done ✅
 
