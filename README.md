@@ -16,11 +16,11 @@ I use docker on a daily basis to host my Arr stack as well as a Jellyfin server 
 #### [Ansible](https://docs.ansible.com)
 I used ansible to automatically update and upgrade packages in Linux VM's to streamline the testing process. I used both SSH keys as well as password input.
 
-### On-Prem SSO using [Authentik](https://goauthentik.io)
-I use Authentik to put some of the services I run behind SSO that is connected to my own AD Domain. It allows me to streamline the process of logging into multiple services with just one account instead of having to remember multiple logins.
+### [Authentik](https://goauthentik.io)
+I setup On-prem SSO using Authentik to put some of the services I run behind and its connected to my own AD Domain. It allows me to streamline the process of logging into multiple services with just one account instead of having to remember multiple logins.
 
-### On-Prem SIEM & XDR using [Wazuh](https://wazuh.com)
-I used Wazuh to collect logs from all my servers as well as my endpoint (Macbook Pro) and it sends notifications if something suspicious is going on like a foregin process or login.
+### [Wazuh](https://wazuh.com)
+I use Wazuh as an On-Prem SIEM & XDR to collect logs from all my servers as well as my endpoint (Macbook Pro) and it sends notifications if something suspicious is going on like a foregin process or login.
 
 ### In Progress 🔄
 
