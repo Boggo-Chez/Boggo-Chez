@@ -16,13 +16,21 @@ I use docker on a daily basis to host my Arr stack as well as a Jellyfin server 
 #### [Ansible](https://docs.ansible.com)
 I used ansible to automatically update and upgrade packages in Linux VM's to streamline the testing process. I used both SSH keys as well as password input.
 
+### On-Prem SSO using [Authentik](https://goauthentik.io)
+I use Authentik to put some of the services I run behind SSO that is connected to my own AD Domain. It allows me to streamline the process of logging into multiple services with just one account instead of having to remember multiple logins.
+
+### On-Prem SIEM & XDR using [Wazuh](https://wazuh.com)
+I used Wazuh to collect logs from all my servers as well as my endpoint (Macbook Pro) and it sends notifications if something suspicious is going on like a foregin process or login.
+
 ### In Progress 🔄
 
 #### Infiniband
 I'm currently using 2 Mellanox ConnectX-3 VPI Cards to facilitate an Infiniband connection with my Mellanox SX6036. The Mellanox SX6036 runs the Subnet Manager and provides the routing capabilities for the cards to talk to eachother. I also implemented NVMe-oF using RDMA from my TrueNas server (NVMe Target) to my Proxmox node (NVMe Initiator). This had to be done with an extra step of using IPoIB to facilitate the necessary connection using IP addresses statically assigned to each NIC, but the underlying transport method is Infiniband. It allows for direct copy of a ZFS block from my Truenas server to my Proxmox node while bypassing the CPU entirely using Zero-Copy. Eventually, I'm going to move to a dedicated ZVOL of 4 U.2 drives, but temporarily I have it set to export from my long-term storage architecture.
+6/12/26: I'm still just waiting on the drives to come in!
+
 
 #### [Kubernetes](https://kubernetes.io)
-I'm still new to Kubernetes but so far I've setup a cluster of 1 Control node and 3 Worker nodes. They're all currently VM's but I'm looking towards moving them to physical devices soon. I also run a local instance of [MetalLB](https://metallb.io) to facilitate load balancing between nodes
+I'm still new to Kubernetes but so far I've setup a cluster of 1 Control node and 3 Worker nodes. They're all currently VM's but I'm looking towards moving them to physical devices soon. I also run a local instance of [MetalLB](https://metallb.io) to facilitate load balancing between nodes.
 
 
 <!--
